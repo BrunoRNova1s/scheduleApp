@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/scheduleApp/static/css/main.45a09725.chunk.css",
+    "main.js": "/scheduleApp/static/js/main.5f725cf1.chunk.js",
+    "main.js.map": "/scheduleApp/static/js/main.5f725cf1.chunk.js.map",
+    "runtime-main.js": "/scheduleApp/static/js/runtime-main.dbac4d39.js",
+    "runtime-main.js.map": "/scheduleApp/static/js/runtime-main.dbac4d39.js.map",
+    "static/js/2.8d93ecba.chunk.js": "/scheduleApp/static/js/2.8d93ecba.chunk.js",
+    "static/js/2.8d93ecba.chunk.js.map": "/scheduleApp/static/js/2.8d93ecba.chunk.js.map",
+    "static/js/3.fea9c7ae.chunk.js": "/scheduleApp/static/js/3.fea9c7ae.chunk.js",
+    "static/js/3.fea9c7ae.chunk.js.map": "/scheduleApp/static/js/3.fea9c7ae.chunk.js.map",
+    "index.html": "/scheduleApp/index.html",
+    "static/css/main.45a09725.chunk.css.map": "/scheduleApp/static/css/main.45a09725.chunk.css.map",
+    "static/js/2.8d93ecba.chunk.js.LICENSE.txt": "/scheduleApp/static/js/2.8d93ecba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbac4d39.js",
+    "static/js/2.8d93ecba.chunk.js",
+    "static/css/main.45a09725.chunk.css",
+    "static/js/main.5f725cf1.chunk.js"
+  ]
+}
