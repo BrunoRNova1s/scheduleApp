@@ -1,0 +1,36 @@
+{
+  "schedules": [
+    {
+      "title": "Test",
+      "description": "Description",
+      "day": 1647216000000,
+      "id": 1646497399886
+    },
+    {
+      "title": "Test 2",
+      "description": "Description 2",
+      "day": 1647302400000,
+      "id": 1646499681692
+    },
+    {
+      "title": "Test 3",
+      "description": "Description 3",
+      "day": 1647388800000,
+      "id": 1646499732656
+    }
+  ],
+  "scheduleLogs": [
+    {
+      "title": "Test",
+      "description": "Description",
+      "day": 1647216000000,
+      "id": 1646497399886
+    },
+    {
+      "title": "Test 2",
+      "description": "Description 2",
+      "day": 1647302400000,
+      "id": 1646499681692
+    }
+  ]
+}
