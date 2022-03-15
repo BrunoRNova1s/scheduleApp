@@ -3,8 +3,7 @@ import GlobalContext from "../context/GlobalContext";
 import EventCard from "./EventCard";
 
 export default function Sidebar() {
-  const { schedulesCard } = useContext(GlobalContext);
-  const { savedEventsLogs } = useContext(GlobalContext);
+  const { schedulesCard, savedEventsLogs } = useContext(GlobalContext);
 
   return (
     <aside className="border p-5 w-64">

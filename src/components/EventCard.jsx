@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import GlobalContext from "../context/GlobalContext";
+import api from "../services/api";
 
 export default function EventCard({ title, description, day, id, state }) {
   const { dispatchCalEvent, setSelectedEvent } = useContext(GlobalContext);
@@ -19,15 +20,30 @@ export default function EventCard({ title, description, day, id, state }) {
     };
 
     if (stateCta === "retire") {
-      dispatchCalEvent({
-        type: "delete",
-        payload: id,
-      });
+      api
+        .delete(`scheduleLogs/${id}`)
+        .then(
+          dispatchCalEvent({
+            type: "delete",
+            payload: id,
+          })
+        )
+        .catch((err) => {
+          console.log(err);
+        });
       setStateCta("unretired");
     } else {
-      dispatchCalEvent({ 
-        type: "push", 
-        payload: [calendarEvent] });
+      api
+        .post("scheduleLogs", calendarEvent)
+        .then((response) => {
+          dispatchCalEvent({
+            type: "push",
+            payload: [response.data],
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
       setStateCta("retired");
     }
   }

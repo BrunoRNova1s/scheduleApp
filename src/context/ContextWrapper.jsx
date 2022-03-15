@@ -8,10 +8,8 @@ function savedEventsLogsReducer(state, { type, payload }) {
     case "get":
       return [...payload];
     case "push":
-      api.post("scheduleLogs", ...payload);
       return [...state, ...payload];
     case "delete":
-      api.delete(`scheduleLogs/${payload}`);
       return state.filter((evt) => evt.id !== payload);
     default:
       throw new Error();
